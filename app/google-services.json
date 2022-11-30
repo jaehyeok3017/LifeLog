@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "383452278379",
+    "project_id": "lifelog-c2a72",
+    "storage_bucket": "lifelog-c2a72.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:383452278379:android:76367db0a4690a7f1dcb2e",
+        "android_client_info": {
+          "package_name": "com.careerproject.lifelog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "383452278379-v6s8lenbvnej0v26gierr2ai3f7dhlq7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALGXc2CUPDuyjSGgUvdJHfXLoEf2GyuVo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "383452278379-v6s8lenbvnej0v26gierr2ai3f7dhlq7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
