@@ -4,6 +4,183 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.RegisterActivity">
+    tools:context=".ui.RegisterActivity"
+    android:paddingHorizontal="30dp">
+
+        <ImageView
+            android:id="@+id/setting_item_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:id="@+id/te"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_userinfo_text"
+            app:layout_constraintTop_toBottomOf="@+id/setting_item_image"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="44dp"
+            android:textColor="@color/main"
+            android:fontFamily="@font/pretendard_medium"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/register_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/register_email_hint"
+            android:padding="13dp"
+            android:singleLine="true"
+            android:textColorHint="@color/hint"
+            android:textColor="@color/main"
+            app:layout_constraintTop_toBottomOf="@+id/te"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="30dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/email_check_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_check_text"
+            android:textColor="#AA1010"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/register_email"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp" />
+
+        <EditText
+            android:id="@+id/nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/register_nickname"
+            android:padding="13dp"
+            android:singleLine="true"
+            android:paddingStart="20dp"
+            android:textColorHint="@color/hint"
+            android:textColor="@color/main"
+            app:layout_constraintTop_toBottomOf="@+id/email_check_text"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/nickname_check_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_nickname_checktxt"
+            android:textColor="#CC3838"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/nickname"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/register_name"
+            android:padding="13dp"
+            android:singleLine="true"
+            android:paddingStart="20dp"
+            android:textColorHint="@color/hint"
+            android:textColor="@color/main"
+            app:layout_constraintTop_toBottomOf="@+id/nickname_check_text"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/te2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_pw_text"
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="44dp"
+            android:textColor="@color/main"
+            android:fontFamily="@font/pretendard_medium"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/register_passwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/register_pw_text"
+            android:padding="13dp"
+            android:textColorHint="@color/hint"
+            android:textColor="@color/main"
+            android:paddingStart="20dp"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            app:layout_constraintTop_toBottomOf="@+id/te2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="30dp"
+            android:textSize="16sp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/passwd_check_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_passwd_text"
+            android:textColor="#CC3838"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/register_passwd"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp" />
+
+        <EditText
+            android:id="@+id/register_repeat_passwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/register_repw_text"
+            android:padding="13dp"
+            android:paddingStart="20dp"
+            android:singleLine="true"
+            android:textColorHint="@color/hint"
+            android:textColor="@color/main"
+            android:inputType="textPassword"
+            app:layout_constraintTop_toBottomOf="@+id/passwd_check_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/repeat_passwd_check_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_repw_check"
+            android:textColor="#CC3838"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/register_repeat_passwd"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp" />
+
+
+        <Button
+            android:id="@+id/registercomplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/register_btn_complete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:backgroundTint="@color/main"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginBottom="50dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

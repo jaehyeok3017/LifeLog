@@ -1,3 +1,35 @@
 <resources>
     <string name="app_name">LifeLog</string>
+
+
+    <!-- 회원가입 & 로그인 -->
+    <string name="register_text">회원가입</string>
+    <string name="register_sub_text1">회원가입을 하실</string>
+    <string name="register_sub_text2">정보를 확인해주세요</string>
+    <string name="register_email_hint">이메일을 입력하세요</string>
+    <string name="register_check_text">이메일 형식을 확인해주세요 (aaaa@gmail.com)</string>
+    <string name="register_pw_text">비밀번호를 입력하세요</string>
+    <string name="register_pw_check">특수문자, 영문, 숫자를 조합한 8~10글자로 설정하세요</string>
+    <string name="register_name">이름을 입력하세요</string>
+    <string name="register_repw_text">비밀번호를 다시 입력하세요</string>
+    <string name="register_repw_check">비밀번호가 일치하지 않습니다</string>
+    <string name="register_btn_complete">완료</string>
+    <string name="welcome_nextbtn">next_mark</string>
+    <string name="welcome_previousbtn">previous_mark</string>
+    <string name="login_to_lifelog">라이프로그에 로그인하기</string>
+    <string name="login_hint_password">비밀번호를 입력하세요</string>
+    <string name="login_hint_email">이메일을 입력하세요</string>
+    <string name="login_complete_btn">로그인</string>
+    <string name="login_go_register_btn">라이프로그 회원가입하기</string>
+    <string name="register_nickname">닉네임을 입력해주세요</string>
+    <string name="register_nickname_checktxt">한글 혹은 영어, 숫자로만 구성된 2~10자리로 설정하세요.</string>
+    <string name="register_nickname_check">중복체크</string>
+    <string name="register_passwd_text">비밀번호 설정하기</string>
+    <string name="register_userinfo_text">회원 정보 입력하기</string>
+    <string name="login_text">LifeLog Login</string>
+
+    <!-- Bottom Navi Menu -->
+    <string name="main_nav_todo">TODO</string>
+    <string name="main_nav_check">CHECK</string>
+    <string name="main_nav_main">MAIN</string>
 </resources>

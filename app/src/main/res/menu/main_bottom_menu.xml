@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="@string/main_nav_main"
+        android:enabled="true"
+        android:id="@+id/menu_home"
+        android:icon="@drawable/ic_baseline_home_24" />
+
+  <item
+        android:title="@string/main_nav_todo"
+        android:enabled="true"
+        android:id="@+id/menu_todo"
+        android:icon="@drawable/ic_baseline_assignment_24" />
+
+    <item
+        android:title="@string/main_nav_check"
+        android:enabled="true"
+        android:id="@+id/menu_check"
+        android:icon="@drawable/ic_baseline_event_available_24" />
+</menu>
