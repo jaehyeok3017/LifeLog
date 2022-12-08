@@ -6,7 +6,7 @@ import android.util.Log
 import android.widget.Toast
 import com.careerproject.lifelog.R
 import com.careerproject.lifelog.databinding.ActivityMainBinding
-import com.careerproject.lifelog.ui.main.check.CheckFragment
+import com.careerproject.lifelog.ui.main.check.NewsFragment
 import com.careerproject.lifelog.ui.main.home.HomeFragment
 import com.careerproject.lifelog.ui.main.todo.TodoFragment
 
@@ -25,11 +25,13 @@ class MainActivity : AppCompatActivity() {
                 R.id.menu_home -> {
                     supportFragmentManager.beginTransaction().replace(R.id.fragment, HomeFragment()).commit()
                 }
+
+                R.id.menu_check -> {
+                    supportFragmentManager.beginTransaction().replace(R.id.fragment, NewsFragment()).commit()
+                }
+
                 R.id.menu_todo -> {
                     supportFragmentManager.beginTransaction().replace(R.id.fragment, TodoFragment()).commit()
-                }
-                R.id.menu_check -> {
-                    supportFragmentManager.beginTransaction().replace(R.id.fragment, CheckFragment()).commit()
                 }
             }
             true

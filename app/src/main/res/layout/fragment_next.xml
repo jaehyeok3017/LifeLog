@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingHorizontal="30dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/add_image"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_sc1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/item_home_pre_comment" />
+
+    <EditText
+        android:id="@+id/esg_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:hint="계획에 맞춰 실행할 ESG를 입력하세요"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@id/add_image"
+        app:layout_constraintTop_toBottomOf="@id/add_image"
+        android:layout_marginTop="30dp"
+        android:maxLength="20"
+        android:singleLine="true"
+        />
+
+
+    <EditText
+        android:id="@+id/comment_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:hint="계획을 입력하세요"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@+id/esg_edit_text"
+        app:layout_constraintTop_toBottomOf="@id/esg_edit_text"
+        android:layout_marginTop="30dp"
+        />
+
+    <EditText
+        android:id="@+id/date_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:hint="날짜를 입력하세요"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@+id/comment_edit_text"
+        app:layout_constraintTop_toBottomOf="@id/comment_edit_text"
+        android:layout_marginTop="30dp"
+        />
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="@color/main"
+        android:text="업로드"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_baseline_person_pin_24"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="12dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/nickname"
+                android:gravity="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_marginStart="15dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="jaehyeok"
+                app:layout_constraintTop_toTopOf="@id/icon"
+                app:layout_constraintStart_toEndOf="@id/icon"/>
+
+            <TextView
+                android:id="@+id/time"
+                android:gravity="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:text="2022.12.01"
+                app:layout_constraintTop_toTopOf="@id/nickname"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:src="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:id="@+id/comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="내일 자구 프젝 제출에 대한 미래...?"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/image"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:id="@+id/esg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="내 사회적 건강을 되찾기 위해 새벽 3시 안에 마감"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/comment"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
